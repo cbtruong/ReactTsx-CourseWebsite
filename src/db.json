@@ -1,0 +1,102 @@
+{
+  "courses": [
+    {
+      "id": "1",
+      "title": "Lập trình Javascript cơ bản",
+      "url": "https://files.fullstack.edu.vn/f8-prod/courses/1.png",
+      "view": 350000,
+      "urlIcon": "https://files.fullstack.edu.vn/f8-prod/courses/7/6200b81f52d83.png"
+    },
+    {
+      "id": "2",
+      "title": "Lập trình Scratch cơ bản",
+      "url": "https://tse2.mm.bing.net/th?id=OIP.9l5sDtv8h_wIw3aG17s4qQHaF_&pid=Api&P=0&h=180",
+      "view": 3,
+      "urlIcon": "https://tse3.mm.bing.net/th?id=OIP.bxFhdyk2vv20s0V5-GG-AAHaE8&pid=Api&P=0&h=180"
+    },
+    {
+      "id": "3",
+      "title": "Lập trình C++ cơ bản",
+      "url": "https://files.fullstack.edu.vn/f8-prod/courses/21/63e1bcbaed1dd.png",
+      "view": 10000,
+      "urlIcon": "https://tse1.mm.bing.net/th?id=OIP.Hg3u8U1odrMDcvbHHGqoMwHaHX&pid=Api&P=0&h=180"
+    },
+    {
+      "id": "4",
+      "title": "Lập trình C cơ bản",
+      "url": "https://files.fullstack.edu.vn/f8-prod/courses/21/63e1bcbaed1dd.png",
+      "view": 275,
+      "urlIcon": "https://tse2.mm.bing.net/th?id=OIP.o-hANAo_F89nl5AF-2HLJAHaHa&pid=Api&P=0&h=180"
+    },
+    {
+      "id": "5",
+      "title": "Javascript nâng cao",
+      "url": "https://files.fullstack.edu.vn/f8-prod/courses/12.png",
+      "view": 10000,
+      "urlIcon": "https://files.fullstack.edu.vn/f8-prod/courses/7/6200b81f52d83.png"
+    },
+    {
+      "id": "6",
+      "title": "Kiến thức nền tảng",
+      "url": "https://files.fullstack.edu.vn/f8-prod/courses/7.png",
+      "view": 275,
+      "urlIcon": "https://files.fullstack.edu.vn/f8-prod/courses/7/6200b81f52d83.png"
+    }
+  ],
+  "sections": [
+    {
+      "id": "section1",
+      "courseId": "1",
+      "title": "Giới thiệu"
+    },
+    {
+      "id": "section2",
+      "courseId": "1",
+      "title": "Làm quen với HTML và CSS"
+    }
+  ],
+  "lessons": [
+    {
+      "id": "1",
+      "sectionId": "section1",
+      "title": "Lời khuyên trước khóa học",
+      "type": "video",
+      "status": "done",
+      "content": "https://res.cloudinary.com/dsdxwarvu/video/upload/v1734696516/Untitled_video_-_Made_with_Clipchamp_lgb0vm.mp4"
+    },
+    {
+      "id": "2",
+      "sectionId": "section1",
+      "title": "Giới thiệu về CSS",
+      "type": "video",
+      "status": "done",
+      "content": "https://res.cloudinary.com/dsdxwarvu/video/upload/v1734701985/Untitled_video_-_Made_with_Clipchamp_1_uclnki.mp4"
+    },
+    {
+      "id": "3",
+      "sectionId": "section2",
+      "title": "Cấu trúc của một file HTML",
+      "type": "video",
+      "status": "done",
+      "content": "https://res.cloudinary.com/dsdxwarvu/video/upload/v1734701985/Untitled_video_-_Made_with_Clipchamp_1_uclnki.mp4"
+    },
+    {
+      "id": "4",
+      "sectionId": "section2",
+      "title": "Áp dụng CSS vào HTML",
+      "type": "quiz",
+      "status": "ban",
+      "questions": [
+        {
+          "id": "q1",
+          "question": "Câu hỏi 1 về CSS",
+          "answer_A": "a",
+          "answer_B": "b",
+          "answer_C": "c",
+          "answer_D": "d",
+          "correct_answer": "A"
+        }
+      ]
+    }
+  ]
+}

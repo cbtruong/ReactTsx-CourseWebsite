@@ -3,6 +3,8 @@ import { CommonProps } from "../../Types/ClientTypes";
 import { IoCloseSharp } from "react-icons/io5";
 import axios from "axios";
 
+const openAIUrl = process.env.OPEN_AI_URL;
+
 const OpenAi: React.FC<CommonProps> = ({
 	className,
 	isActive,
@@ -33,7 +35,7 @@ const OpenAi: React.FC<CommonProps> = ({
 	const handleQuestionUser = async () => {
 		try {
 			const response = await axios({
-				url: `https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key=AIzaSyBSNKns598G-y8Ad1xDzQakXSfVLmJilb4`,
+				url: `${openAIUrl}`,
 				method: "POST",
 				data: {
 					contents: [{ parts: [{ text: userMessage }] }], // Use user message

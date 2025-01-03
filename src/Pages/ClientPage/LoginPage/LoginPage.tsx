@@ -13,8 +13,7 @@ import { FaEye } from "react-icons/fa6";
 import { AuthFormProps, UserInfoProps } from "../../../Types/ClientTypes";
 import { useAuthContext } from "../../../Context/AuthContext";
 
-const clientId =
-	"509973447470-g0ksf1j7ochc85p1g7ur8lqfnf492a9t.apps.googleusercontent.com";
+const clientId =`${process.env.GOOGLE_API_URL}`;
 
 const LoginPage: React.FC<AuthFormProps> = ({ isAuthForm, setIsAuthForm }) => {
 	const { setIsLoggedIn, setUserInfo } = useAuthContext();

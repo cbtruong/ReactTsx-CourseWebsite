@@ -13,8 +13,7 @@ import Logo from "../../../Common/Logo";
 //icon
 import { FaEye } from "react-icons/fa6";
 
-const clientId =
-	"509973447470-g0ksf1j7ochc85p1g7ur8lqfnf492a9t.apps.googleusercontent.com";
+const clientId =`${process.env.GOOGLE_API_URL}`;
 
 const SigninPage: React.FC<AuthFormProps> = ({ isAuthForm, setIsAuthForm }) => {
 	const onSuccess = (response: CredentialResponse) => {

@@ -82,7 +82,7 @@ const Header = () => {
 							className="relative cursor-pointer"
 						>
 							<img
-								src={userInfo?.picture}
+								src={userInfo?.picture || "https://tse2.mm.bing.net/th?id=OIP.yJG2mHObj-YsewT_WuYE5AHaE7&pid=Api&P=0&h=180"}
 								alt=""
 								className="w-10 h-full rounded-full"
 							/>

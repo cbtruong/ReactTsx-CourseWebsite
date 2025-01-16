@@ -11,7 +11,6 @@ import { Link } from "react-router-dom";
 import { HandleAppearScroll } from "../../../../Common/HandleFunction";
 
 const CourseList = () => {
-	const [isVisible, setIsVisible] = useState(false);
 	const sectionRef = useRef<HTMLDivElement>(null);
 	const [courses, setCourses] = useState<CourseProps[]>([]);
 
@@ -33,21 +32,17 @@ const CourseList = () => {
 	useEffect(() => {
 		fetchApi();
 		window.addEventListener("scroll", () =>
-			HandleAppearScroll(setIsVisible, sectionRef)
+			HandleAppearScroll(sectionRef)
 		);
 		return () =>
 			window.removeEventListener("scroll", () =>
-				HandleAppearScroll(setIsVisible, sectionRef)
+				HandleAppearScroll(sectionRef)
 			);
 	}, []);
 	return (
 		<div
 			ref={sectionRef}
-			className={`${
-				isVisible
-					? "opacity-100 translate-y-0"
-					: "opacity-0 translate-y-2"
-			} w-11/12 m-auto mb-6 transitionMedium`}
+			className={`w-11/12 m-auto mb-6 transitionMedium`}
 		>
 			<div className="flex-y-between mb-6">
 				<h2 className="text-2xl font-bold">Course Free</h2>

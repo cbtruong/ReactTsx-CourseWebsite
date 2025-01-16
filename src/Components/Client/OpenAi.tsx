@@ -3,7 +3,7 @@ import { CommonProps } from "../../Types/ClientTypes";
 import { IoCloseSharp } from "react-icons/io5";
 import axios from "axios";
 
-const openAIUrl = process.env.OPEN_AI_URL;
+const openAIUrl = import.meta.env.VITE_OPEN_AI_URL;
 
 const OpenAi: React.FC<CommonProps> = ({
 	className,

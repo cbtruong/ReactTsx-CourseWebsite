@@ -1,10 +1,10 @@
 import React, { Dispatch, SetStateAction } from "react";
 
 export interface UserInfoProps {
-  email: string; 
-  password:string,
-  name: string; 
-  picture: string; 
+	email: string;
+	password: string;
+	name: string;
+	picture: string;
 }
 
 export interface CommonProps {
@@ -13,7 +13,11 @@ export interface CommonProps {
 	isActive?: boolean;
 	setIsActive?: Dispatch<SetStateAction<boolean>>;
 }
-
+export interface ErrorsAuthProps {
+	email: string;
+	password: string;
+	confirmPassword?: string;
+}
 export interface AuthFormProps extends CommonProps {
 	isAuthForm: number;
 	setIsAuthForm?: Dispatch<SetStateAction<number>>;
@@ -22,12 +26,12 @@ export interface CourseProps {
 	id: string;
 	title: string;
 	sections?: Section[];
-	url:string,
-	view:number,
+	url: string;
+	view: number;
 }
 export interface Lesson {
 	id: string;
-	sectionId:string;
+	sectionId: string;
 	title: string;
 	type: string;
 	status: string;

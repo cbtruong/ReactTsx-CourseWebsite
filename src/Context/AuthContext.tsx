@@ -34,6 +34,7 @@ export const AppProvider: React.FC<AppProviderProps> = ({ children }) => {
   const [isLoggedIn, setIsLoggedIn] = useState<boolean>(false);
   const [userInfo, setUserInfo] = useState<UserInfoProps>({
     email: "",
+    password:"",
     name: "",
     picture: "",
   });
